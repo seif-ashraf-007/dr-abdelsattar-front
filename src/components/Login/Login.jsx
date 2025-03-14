@@ -9,7 +9,7 @@ const Login = () => {
   const [success, setSuccess] = useState(false); // New state for success modal
   const navigate = useNavigate();
 
-  const API_URL = "http://16.170.230.84:5000";
+  const API_URL = "http://16.170.230.84";
 
   const handleLogin = async (e) => {
     e.preventDefault();

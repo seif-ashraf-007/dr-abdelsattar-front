@@ -23,7 +23,7 @@ function Blog() {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch("http://16.170.230.84:5000/api/blogposts");
+        const response = await fetch("https://16.170.230.84/api/blogposts");
         const data = await response.json();
         setBlogPosts(data);
         setSelectedPost(data[0]?._id); // Use _id from MongoDB and check if posts exist
@@ -51,7 +51,7 @@ function Blog() {
     if (window.confirm("Are you sure you want to delete this post?")) {
       try {
         const response = await fetch(
-          `http://16.170.230.84:5000/api/blogposts/${postId}`,
+          `http://16.170.230.84/api/blogposts/${postId}`,
           {
             method: "DELETE",
             headers: {
