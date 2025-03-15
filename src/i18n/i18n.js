@@ -22,7 +22,7 @@ i18n
           hero: {
             banner: {
               title: "Dr. Abdelsattar Ahmed Nasr",
-              sub_title: "Interventional Cardiovascular Specialist",
+              sub_title: "Cardiovascular and interventional catheterization",
             },
             cards: {
               card1: {
