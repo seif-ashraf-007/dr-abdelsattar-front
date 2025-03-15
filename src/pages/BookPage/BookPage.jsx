@@ -111,8 +111,8 @@ const BookPage = () => {
     releaseDate: t("bookPage.date"),
     images: [bookBanner, bookImg1, bookImg2, bookImg3],
     purchaseLinks: {
-      amazon: "/book",
-      bookstore: "/book",
+      amazon: "",
+      bookstore: "",
       physicalAddress: t("bookPage.buttons.address.Details"),
     },
   };
@@ -221,7 +221,7 @@ const BookPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <a
                   href={bookData.purchaseLinks.amazon}
-                  target="_blank"
+                  target=""
                   rel="noopener noreferrer"
                   className="flex cursor-not-allowed opacity-50 flex-col items-center justify-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
                 >
@@ -233,7 +233,7 @@ const BookPage = () => {
 
                 <a
                   href={bookData.purchaseLinks.bookstore}
-                  target="_blank"
+                  target=""
                   rel="noopener noreferrer"
                   className="flex flex-col items-center cursor-not-allowed opacity-50 justify-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
                 >
