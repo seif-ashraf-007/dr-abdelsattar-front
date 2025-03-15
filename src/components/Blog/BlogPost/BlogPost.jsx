@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
-import styles from './BlogPost.module.css';
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import styles from "./BlogPost.module.css";
 import { FaRegEdit } from "react-icons/fa";
 import { MdDeleteOutline } from "react-icons/md";
 
@@ -8,11 +8,11 @@ const BlogPost = ({
   title,
   paragraph,
   pictures = [], // Default value
-  author = 'Dr. Abdelsattar Ahmed Nasr', // Default value
+  author = "Dr. Abdelsattar Ahmed Nasr", // Default value
   timestamp,
   isLoggedIn,
   onDelete,
-  onEdit
+  onEdit,
 }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -32,16 +32,10 @@ const BlogPost = ({
           <h1 className={styles.blogTitle}>{title}</h1>
           {isLoggedIn && (
             <div className={styles.blogActions}>
-              <button 
-                className={styles.editButton}
-                onClick={onEdit}
-              >
-                <FaRegEdit/>
+              <button className={styles.editButton} onClick={onEdit}>
+                <FaRegEdit />
               </button>
-              <button 
-                className={styles.deleteButton}
-                onClick={onDelete}
-              >
+              <button className={styles.deleteButton} onClick={onDelete}>
                 <MdDeleteOutline />
               </button>
             </div>
@@ -70,7 +64,7 @@ const BlogPost = ({
               {pictures.map((img, index) => (
                 <div key={index} className={styles.sliderImageWrapper}>
                   <img
-                    src={`http://localhost:5000${img}`}
+                    src={`https://www.drabdelsattarnasr.com${img}`}
                     alt={`Slide ${index + 1}`}
                     className={styles.sliderImage}
                   />
@@ -84,7 +78,7 @@ const BlogPost = ({
                 <span
                   key={index}
                   className={`${styles.sliderDot} ${
-                    index === currentImageIndex ? styles.activeDot : ''
+                    index === currentImageIndex ? styles.activeDot : ""
                   }`}
                   onClick={() => setCurrentImageIndex(index)}
                 ></span>

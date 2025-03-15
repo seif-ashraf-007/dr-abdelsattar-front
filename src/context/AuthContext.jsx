@@ -24,11 +24,14 @@ export function AuthProvider({ children }) {
         return;
       }
 
-      const response = await fetch("http://localhost:5000/api/verify-token", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        "https://www.drabdelsattarnasr.com/api/verify-token",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (response.ok) {
         const userData = await response.json();
@@ -52,13 +55,16 @@ export function AuthProvider({ children }) {
   const login = async (username, password) => {
     try {
       console.log("Attempting login for user:", username);
-      const response = await fetch("http://localhost:5000/api/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await fetch(
+        "https://www.drabdelsattarnasr.com/api/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+        }
+      );
 
       const data = await response.json();
       console.log("Login response:", data);
