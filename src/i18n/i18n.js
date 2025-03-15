@@ -210,13 +210,13 @@ i18n
               kafrShukr: {
                 title: "Kafr Shukr, Qalyubia",
                 location:
-                  "Kayan Specialized Hospital - Mansoura-Banha Road - Esnyet - Next to Al-Sharawy Mosque",
+                  "Kayan Specialized Hospital - Mansoura-Banha Road - Asneet - Next to Al-Sharawy Mosque",
                 telephone: "+201143818340, +201129191970, +201143818304",
                 workingHours: "Daily at 9 PM except Wednesdays",
                 note: "Sunday at 8pm",
                 extra: {
                   ultraSound: {
-                    title: "Cardiac Ultrasound Clinic (ECO)",
+                    title: "Cardiac Ultrasound Clinic (ECHO)",
                     subTitle: "Prof. Dr. Hamada Khater Radiology Center",
                     description:
                       "Available daily except Wednesdays with a prior reservation",
@@ -262,7 +262,7 @@ i18n
           hero: {
             banner: {
               title: "د. عبدالستار احمد نصر",
-              sub_title: "أخصائي القلب والأوعية الدموية التداخلية",
+              sub_title: "للقلب والاوعية الدموية والقسطرة التداخلية",
             },
             cards: {
               card1: {
@@ -410,7 +410,7 @@ i18n
             bannerSection: {
               title: "الأماكن",
               description:
-                "الدكتور عبد الستار أحمد نصر هو طبيب قلب مشهور مقيم في القاهرة في عيادته الواقعة على كورنيش النيل في روض الفرج. وقد بدأ مؤخرًا أيضًا في تقديم خدمات رعاية القلب المتخصصة في مسقط رأسه في منطقة الدلتا، مما يضمن حصول المزيد من المجتمعات على رعاية عالية الجودة.",
+                "الدكتور عبد الستار أحمد نصر هو طبيب قلب مقيم في القاهرة في عيادته الواقعة على كورنيش النيل في روض الفرج. وقد بدأ مؤخرًا أيضًا في تقديم خدمات رعاية القلب المتخصصة في مسقط رأسه في منطقة الدلتا، مما يضمن حصول المزيد من المجتمعات على رعاية عالية الجودة.",
             },
             buttons: {
               btn1: "كورنيش النيل, القاهرة",
@@ -450,13 +450,13 @@ i18n
               kafrShukr: {
                 title: "كفر شكر, القليوبية",
                 location:
-                  "مستشفى كيان التخصصي - طريق المنصورة بنها - إسنيط - بجوار مسجد الشراوي",
+                  "مستشفى كيان التخصصي - طريق المنصورة بنها - أسنيت - بجوار مسجد الشعراوي",
                 telephone: "201143818340+, 201129191970+, 201143818304+",
                 workingHours: "يوميًا في الساعة 9 مساءً عدا الأربعاء",
                 note: "الاحد الساعة ٨ مساءً",
                 extra: {
                   ultraSound: {
-                    title: "  عيادة الأشعة التلفزيونية على القلب (ECO)",
+                    title: "  عيادة الأشعة التلفزيونية على القلب (إيكو)",
                     subTitle: "مركز أ. د. حمادة خاطر للأشعة ",
                     description: "متاح يوميًا عدا الأربعاء بحجز مسبق",
                     telephone: "20132517017+",
