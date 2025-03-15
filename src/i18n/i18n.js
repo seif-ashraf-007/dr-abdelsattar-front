@@ -28,7 +28,7 @@ i18n
               card1: {
                 title: "Full clinical examination",
                 description:
-                  "We provide a precise clinical examinationfor heart and vascular system with correlation with patient’s complain. Moreover medical history archives to follow up with patient.",
+                  "We provide a precise clinical examination for heart and vascular system with correlation with patient’s complain. Moreover medical history archives to follow up with patient.",
                 button: "Button",
               },
               card2: {
@@ -170,7 +170,7 @@ i18n
             bannerSection: {
               title: "Locations",
               description:
-                "Dr. Abdelsattar Ahmed Nasr is a renowned cardiologist based in Cairo, working at Mokattam Hospital HIO, which is a tertiary center for cardiology, and at his clinic located on the Nile Corniche in Roud Elfarag. Recently, he has also started offering his specialized cardiac care services in his hometown in the Delta region,ensuring more communities have access to top-quality care.",
+                "Dr. Abdelsattar Ahmed Nasr is a renowned cardiologist based in Cairo, At his clinic located on the Nile Corniche in Roud Elfarag. Recently, he has also started offering his specialized cardiac care services in his hometown in the Delta region,ensuring more communities have access to top-quality care.",
             },
             buttons: {
               btn1: "Nile Corniche, Cairo",
@@ -213,10 +213,10 @@ i18n
                   "Kayan Specialized Hospital - Mansoura-Banha Road - Esnyet - Next to Al-Sharawy Mosque",
                 telephone: "+201143818340, +201129191970, +201143818304",
                 workingHours: "Daily at 9 PM except Wednesdays",
-                note: "Please follow up with the clinic secretary on Sunday for possible delays due to surgeries",
+                note: "Sunday at 8pm",
                 extra: {
                   ultraSound: {
-                    title: "Cardiac Ultrasound Clinic",
+                    title: "Cardiac Ultrasound Clinic (ECO)",
                     subTitle: "Prof. Dr. Hamada Khater Radiology Center",
                     description:
                       "Available daily except Wednesdays with a prior reservation",
@@ -410,7 +410,7 @@ i18n
             bannerSection: {
               title: "الأماكن",
               description:
-                "الدكتور عبد الستار أحمد نصر هو طبيب قلب مشهور مقيم في القاهرة، ويعمل في مستشفى المقطم HIO، وهو مركز ثالثي لأمراض القلب، وفي عيادته الواقعة على كورنيش النيل في روض الفرج. وقد بدأ مؤخرًا أيضًا في تقديم خدمات رعاية القلب المتخصصة في مسقط رأسه في منطقة الدلتا، مما يضمن حصول المزيد من المجتمعات على رعاية عالية الجودة.",
+                "الدكتور عبد الستار أحمد نصر هو طبيب قلب مشهور مقيم في القاهرة في عيادته الواقعة على كورنيش النيل في روض الفرج. وقد بدأ مؤخرًا أيضًا في تقديم خدمات رعاية القلب المتخصصة في مسقط رأسه في منطقة الدلتا، مما يضمن حصول المزيد من المجتمعات على رعاية عالية الجودة.",
             },
             buttons: {
               btn1: "كورنيش النيل, القاهرة",
@@ -427,7 +427,7 @@ i18n
                 note: "يرجى متابعة سكرتارية العيادة يوم الأحد للتأكد من وجود تأخيرات محتملة بسبب العمليات الجراحية",
                 extra: {
                   getDirections: "الحصول على الاتجاهات",
-                  ContactSecretary: "الاتصال بالسكرتير",
+                  ContactSecretary: "الاتصال بالسكرتارية",
                 },
               },
               homeVisit: {
@@ -453,16 +453,16 @@ i18n
                   "مستشفى كيان التخصصي - طريق المنصورة بنها - إسنيط - بجوار مسجد الشراوي",
                 telephone: "201143818340+, 201129191970+, 201143818304+",
                 workingHours: "يوميًا في الساعة 9 مساءً عدا الأربعاء",
-                note: "يرجى متابعة سكرتارية العيادة يوم الأحد للتأكد من وجود تأخيرات محتملة بسبب العمليات الجراحية",
+                note: "الاحد الساعة ٨ مساءً",
                 extra: {
                   ultraSound: {
-                    title: "عيادة الأشعة التلفزيونية للقلب",
-                    subTitle: "مركز أ. د. حمادة خاطر للأشعة التلفزيونية",
+                    title: "  عيادة الأشعة التلفزيونية على القلب (ECO)",
+                    subTitle: "مركز أ. د. حمادة خاطر للأشعة ",
                     description: "متاح يوميًا عدا الأربعاء بحجز مسبق",
                     telephone: "20132517017+",
                   },
                   getDirections: "الحصول على الاتجاهات",
-                  ContactSecretary: "الاتصال بالسكرتير",
+                  ContactSecretary: "الاتصال بالسكرتارية",
                 },
               },
             },

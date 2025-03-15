@@ -148,7 +148,7 @@ function Locations() {
         >
           <FaWhatsapp className="contact-icon whatsapp" />
         </a>
-        <a href="tel:+2010043410534">
+        <a href="tel:+201143410534">
           <IoCallOutline className="contact-icon call" />
         </a>
         <a target="_blank" href="https://www.facebook.com/dr.abdelsattarnasr">
@@ -283,7 +283,7 @@ function Locations() {
                       <div className="call">
                         <p className="dir-p">
                           <IoCallOutline className="info-icon" />
-                          <a href="tel:+201110767434" className="call-p">
+                          <a href="tel:+201143410534" className="call-p">
                             {
                               translation.locations.kafrShukr.extra
                                 .ContactSecretary
@@ -340,7 +340,7 @@ function Locations() {
                       <div className="call">
                         <p className="dir-p">
                           <IoCallOutline className="info-icon" />
-                          <a href="tel:+201110767434" className="call-p">
+                          <a href="tel:+201143410534" className="call-p">
                             {
                               translation.locations.nileLocation.extra
                                 .ContactSecretary
