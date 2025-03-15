@@ -140,7 +140,7 @@ const BookPage = () => {
           <div
             ref={imageSliderRef}
             className={`relative w-full lg:w-1/2 ${
-              isRTL ? "order-last" : "order-first"
+              isRTL ? "lg:order-last" : "lg:order-first"
             }`}
           >
             <div className="overflow-hidden">
@@ -186,7 +186,7 @@ const BookPage = () => {
           <div
             ref={bookInfoRef}
             className={`w-full lg:w-1/2 flex flex-col ${
-              isRTL ? "order-first" : "order-last"
+              isRTL ? "lg:order-first" : "lg:order-last"
             }`}
           >
             {/* Title and Author moved here */}
