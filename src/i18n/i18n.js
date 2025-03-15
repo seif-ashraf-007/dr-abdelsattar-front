@@ -229,7 +229,7 @@ i18n
             },
           },
           bookPage: {
-            bookName: "Your Guide in weakness of cardiac muscle",
+            bookName: "Your Guide in Heart Failure",
             Author: "By Dr. Abdelsattar Ahmed Nasr",
             title: "About the book",
             description:
