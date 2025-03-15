@@ -19,7 +19,7 @@ function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75"
-              href="#about"
+              href="/#about"
             >
               {t("footer.buttons.about")}
             </a>
@@ -28,7 +28,7 @@ function Footer() {
           <li>
             <a
               className="text-gray-700 transition hover:text-gray-700/75"
-              href="#cert"
+              href="/#cert"
             >
               {t("footer.buttons.certificates")}
             </a>

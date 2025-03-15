@@ -7,6 +7,8 @@ import {
   faBookOpen,
   faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
+import { FaAmazon } from "react-icons/fa";
+
 import { gsap } from "gsap";
 import { useTranslation } from "react-i18next";
 
@@ -109,8 +111,8 @@ const BookPage = () => {
     releaseDate: t("bookPage.date"),
     images: [bookBanner, bookImg1, bookImg2, bookImg3],
     purchaseLinks: {
-      amazon: "https://amazon.com/",
-      bookstore: "https://bookstore.com/",
+      amazon: "/book",
+      bookstore: "/book",
       physicalAddress: t("bookPage.buttons.address.Details"),
     },
   };
@@ -223,7 +225,7 @@ const BookPage = () => {
                   rel="noopener noreferrer"
                   className="flex cursor-not-allowed opacity-50 flex-col items-center justify-center p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors"
                 >
-                  <i className="fa-brands fa-amazon text-4xl mb-3 text-orange-500"></i>
+                  <FaAmazon className="text-4xl mb-3 text-orange-500" />
                   <span className="font-medium">
                     {t("bookPage.buttons.amazon")}
                   </span>
