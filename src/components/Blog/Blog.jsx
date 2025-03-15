@@ -110,65 +110,63 @@ function Blog() {
         </div>
 
         <div className={styles.blogContent}>
+          <div className={styles.buttonGroupContainer}>
+            <div className={styles.buttonGroup}>
+              {isLoggedIn && (
+                <button
+                  className={styles.addButton}
+                  onClick={() => navigate("/blog/new")}
+                >
+                  +
+                </button>
+              )}
+              {blogPosts.map((post) => (
+                <button
+                  key={post._id}
+                  className={`${styles.blogButton} ${
+                    selectedPost === post._id ? styles.blogButtonActive : ""
+                  }`}
+                  onClick={() => setSelectedPost(post._id)}
+                >
+                  {post.title}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {blogPosts.length === 0 ? (
             <div className={styles.noPostsMessage}>
               There are no blog posts for now.
             </div>
           ) : (
-            <>
-              <div className={styles.buttonGroupContainer}>
-                <div className={styles.buttonGroup}>
-                  {isLoggedIn && (
-                    <button
-                      className={styles.addButton} // Add a class for styling
-                      onClick={() => navigate("/blog/new")}
-                    >
-                      +
-                    </button>
+            <SwitchTransition mode="out-in">
+              <CSSTransition
+                key={selectedPost}
+                nodeRef={nodeRef}
+                timeout={300}
+                classNames={{
+                  enter: styles.infoFadeEnter,
+                  enterActive: styles.infoFadeEnterActive,
+                  exit: styles.infoFadeExit,
+                  exitActive: styles.infoFadeExitActive,
+                }}
+              >
+                <div ref={nodeRef} className={styles.blogInfo}>
+                  {activePost && (
+                    <BlogPost
+                      title={activePost.title}
+                      paragraph={activePost.content}
+                      pictures={activePost.image ? [activePost.image] : []}
+                      author={activePost.author}
+                      timestamp={activePost.date}
+                      isLoggedIn={isLoggedIn}
+                      onDelete={() => handleDelete(activePost._id)}
+                      onEdit={() => handleEdit(activePost._id)}
+                    />
                   )}
-                  {blogPosts.map((post) => (
-                    <button
-                      key={post._id}
-                      className={`${styles.blogButton} ${
-                        selectedPost === post._id ? styles.blogButtonActive : ""
-                      }`}
-                      onClick={() => setSelectedPost(post._id)}
-                    >
-                      {post.title}
-                    </button>
-                  ))}
                 </div>
-              </div>
-
-              <SwitchTransition mode="out-in">
-                <CSSTransition
-                  key={selectedPost}
-                  nodeRef={nodeRef}
-                  timeout={300}
-                  classNames={{
-                    enter: styles.infoFadeEnter,
-                    enterActive: styles.infoFadeEnterActive,
-                    exit: styles.infoFadeExit,
-                    exitActive: styles.infoFadeExitActive,
-                  }}
-                >
-                  <div ref={nodeRef} className={styles.blogInfo}>
-                    {activePost && (
-                      <BlogPost
-                        title={activePost.title}
-                        paragraph={activePost.content}
-                        pictures={activePost.image ? [activePost.image] : []}
-                        author={activePost.author}
-                        timestamp={activePost.date}
-                        isLoggedIn={isLoggedIn}
-                        onDelete={() => handleDelete(activePost._id)}
-                        onEdit={() => handleEdit(activePost._id)}
-                      />
-                    )}
-                  </div>
-                </CSSTransition>
-              </SwitchTransition>
-            </>
+              </CSSTransition>
+            </SwitchTransition>
           )}
         </div>
       </div>

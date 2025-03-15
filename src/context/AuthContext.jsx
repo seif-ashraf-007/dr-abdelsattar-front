@@ -25,7 +25,7 @@ export function AuthProvider({ children }) {
       }
 
       const response = await fetch(
-        "https://www.drabdelsattarnasr.com/api/verify-token",
+        "https://api.drabdelsattarnasr.com/api/verify-token",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -56,7 +56,7 @@ export function AuthProvider({ children }) {
     try {
       console.log("Attempting login for user:", username);
       const response = await fetch(
-        "https://www.drabdelsattarnasr.com/api/login",
+        "https://api.drabdelsattarnasr.com/api/login",
         {
           method: "POST",
           headers: {

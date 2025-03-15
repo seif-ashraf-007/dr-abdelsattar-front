@@ -64,7 +64,7 @@ const BlogPost = ({
               {pictures.map((img, index) => (
                 <div key={index} className={styles.sliderImageWrapper}>
                   <img
-                    src={`https://www.drabdelsattarnasr.com${img}`}
+                    src={`https://api.drabdelsattarnasr.com${img}`}
                     alt={`Slide ${index + 1}`}
                     className={styles.sliderImage}
                   />
