@@ -37,13 +37,16 @@ function BlogPostForm() {
       }
 
       const token = localStorage.getItem("token"); // Assuming you store the token in localStorage
-      const response = await fetch("http://16.170.230.84/api/blogposts/", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-        body: formDataToSend,
-      });
+      const response = await fetch(
+        "https://api.drabdelsattarnasr.com/api/blogposts/",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+          body: formDataToSend,
+        }
+      );
 
       if (response.ok) {
         setMessage("Blog post created successfully!");

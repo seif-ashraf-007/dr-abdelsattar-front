@@ -17,7 +17,7 @@ function EditBlogPost() {
     const fetchPost = async () => {
       try {
         const response = await fetch(
-          `http://16.170.230.84/api/blogposts/${id}`
+          `https://api.drabdelsattarnasr.com/api/blogposts/${id}`
         );
         if (!response.ok) throw new Error("Post not found");
 
@@ -48,13 +48,16 @@ function EditBlogPost() {
         formDataToSend.append("image", formData.image);
       }
 
-      const response = await fetch(`http://16.170.230.84/api/blogposts/${id}`, {
-        method: "PUT",
-        headers: {
-          Authorization: `Bearer ${localStorage.getItem("token")}`,
-        },
-        body: formDataToSend,
-      });
+      const response = await fetch(
+        `https://api.drabdelsattarnasr.com/api/blogposts/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+          },
+          body: formDataToSend,
+        }
+      );
 
       if (!response.ok) throw new Error("Failed to update post");
 
